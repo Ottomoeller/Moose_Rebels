@@ -76,6 +76,6 @@ int main(int argc, char* argv[]) {
     unit_test(test_ordered),
     unit_test(test_reversed)
   };
-  
+  free(tests);
   return run_tests(tests);
 }

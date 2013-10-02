@@ -9,6 +9,7 @@ void test_empty_str(void) {
   char* freeString = disemvowel("");
   assert_string_equal("", freeString);
   free(freeString);
+  free(assert_string_equal("", freeString));
 }
 
 void test_no_vowels(void) {

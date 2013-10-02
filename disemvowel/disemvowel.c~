@@ -41,7 +41,7 @@ char* disemvowel(char* str) {
     j++;
   }
 
-  char* noVowel = calloc(stringLength-count-1, sizeof(char));
+  char* noVowel = calloc(stringLength-count, sizeof(char));
 
   while (j < stringLength) {
     for (i=0; i<len; i++) {
